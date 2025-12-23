@@ -14,12 +14,16 @@ engineering skills**, not to deploy production-ready protocols.
 ## Contracts
 
 ### CipherToken
-A basic ERC20-style token implementation written from scratch (without
+An incremental ERC20-style token implementation written from scratch (without
 OpenZeppelin) to reinforce core Solidity concepts.
 
-**Current features:**
+**Current version: v2**
+
+**Current features (v2):**
 - Token balances
 - `transfer` functionality
+- `Transfer` event emission
+- Custom errors for failure cases
 - Constructor-based initial supply minting
 
 **Concepts practiced:**
@@ -28,12 +32,9 @@ OpenZeppelin) to reinforce core Solidity concepts.
 - Constructor initialization
 - Basic access patterns
 
-Future iterations of this contract will add:
-- Events
-- Custom errors
-- Allowances (`approve` / `transferFrom`)
-- Minting and burning
-- Supply caps and pausability
+**Planned next iteration (v3):**
+- Allowances (`approve`, `allowance`, `transferFrom`)
+- `Approval` event
 
 ---
 
